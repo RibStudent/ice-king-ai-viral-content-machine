@@ -9,18 +9,18 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStartCreating }) => {
   const features = [
     {
       icon: <Music2 className="w-8 h-8 text-yellow-400 golden-icon-glow" />,
-      title: "AI-Powered Music Creation",
-      description: "Generate complete songs with vocals and instrumentals from text"
+      title: "Neural Music Synthesis",
+      description: "Advanced AI models transform your text into fully-produced songs with coherent vocals, harmonies, and instrumental arrangements—all generated from scratch in seconds"
     },
     {
       icon: <Mic2 className="w-8 h-8 text-cyan-400 golden-icon-glow" />,
-      title: "Custom Lyrics Support",
-      description: "Add your own lyrics with structure tags for perfect arrangement"
+      title: "Smart Lyrics Integration",
+      description: "Professional structure tags for verses, choruses, and bridges ensure your custom lyrics align perfectly with musical arrangements, creating radio-ready compositions"
     },
     {
       icon: <Radio className="w-8 h-8 text-orange-400 golden-icon-glow" />,
-      title: "Professional Quality",
-      description: "High-quality audio output with customizable sample rates and formats"
+      title: "Studio-Grade Output",
+      description: "Export production-quality audio with mastered dynamics, balanced frequencies, and customizable formats—ready for streaming platforms, content creation, or professional use"
     }
   ];
 
@@ -51,8 +51,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStartCreating }) => {
                 <Music2 className="w-6 h-6 text-slate-900" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-white golden-glow-headline">Ice King AI Music Generator</h1>
-                <p className="text-blue-200 text-sm">Create Original Music with AI - From Text to Song in Seconds</p>
+                <h1 className="text-xl font-bold text-white golden-glow-headline">Ice King AI Music Studio</h1>
+                <p className="text-blue-200 text-sm">Professional Music Generation Platform • Instant Creation • Zero Experience Required</p>
               </div>
             </div>
             <div className="hidden md:flex items-center gap-6 text-sm text-blue-200">
@@ -71,35 +71,88 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStartCreating }) => {
 
       {/* Hero Section */}
       <section className="relative px-4 py-16 md:py-24 golden-spotlight">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight golden-glow-headline">
-              Turn Your Ideas Into <span className="golden-text-gradient">Music</span>
-              <br />Powered by <span className="text-gradient bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Advanced AI</span>
+        <div className="max-w-5xl mx-auto">
+          {/* Narrative Introduction */}
+          <div className="mb-12 text-center">
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight golden-glow-headline">
+              Ice King: The <span className="golden-text-gradient">AI Music Revolutionary</span> Building Tomorrow's Hit Factory
             </h2>
-            <p className="text-xl text-blue-200 leading-relaxed max-w-3xl mx-auto">
-              Create professional songs with vocals and instrumentals in seconds. Simply describe your 
-              vision, add your lyrics, and let AI bring your music to life. No musical experience needed.
+
+            {/* Main Story Paragraph */}
+            <div className="text-left max-w-4xl mx-auto mb-10">
+              <p className="text-lg md:text-xl text-blue-100 leading-relaxed mb-6">
+                <span className="font-bold text-white golden-text-gradient">Ice King is pioneering the future of AI-powered music creation from his digital fortress</span>,
+                transforming text prompts into professional-grade songs with vocals, instrumentals, and studio-quality production
+                in under 60 seconds. The platform that started as an experiment has evolved into a sophisticated music generation
+                engine, capable of producing everything from ambient soundscapes to viral pop hits—all without requiring any
+                musical training from its users.
+              </p>
+
+              <p className="text-lg md:text-xl text-blue-100 leading-relaxed">
+                Unlike traditional music production that demands years of training and expensive equipment, Ice King's AI
+                system democratizes creativity by offering <span className="font-semibold text-cyan-400">instant professional production,
+                custom lyrics integration with structure tags, and six distinct musical style presets</span>. The platform
+                processes complex musical arrangements through advanced neural networks, generating complete songs with coherent
+                vocals, dynamic instrumentals, and mastered audio output—making professional music creation accessible to
+                storytellers, content creators, and aspiring artists worldwide.
+              </p>
+            </div>
+          </div>
+
+          {/* Key Achievement Banner */}
+          <div className="bg-slate-800/60 backdrop-blur-sm border border-yellow-400/40 rounded-2xl p-6 mb-10 golden-border-glow">
+            <div className="text-center">
+              <p className="text-lg text-yellow-400 font-bold mb-3 golden-text-gradient">
+                Revolutionary AI Music Platform
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                  <span className="text-3xl font-bold text-white golden-glow-headline">60s</span>
+                  <p className="text-blue-200 text-sm mt-1">Complete Song Generation</p>
+                </div>
+                <div>
+                  <span className="text-3xl font-bold text-white golden-glow-headline">3000+</span>
+                  <p className="text-blue-200 text-sm mt-1">Character Lyrics Support</p>
+                </div>
+                <div>
+                  <span className="text-3xl font-bold text-white golden-glow-headline">∞</span>
+                  <p className="text-blue-200 text-sm mt-1">Creative Possibilities</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Platform Capabilities */}
+          <div className="text-center mb-10">
+            <p className="text-lg text-blue-100 leading-relaxed max-w-3xl mx-auto mb-6">
+              From viral content creators needing original soundtracks to musicians prototyping new ideas, Ice King's
+              platform serves as a <span className="font-semibold text-yellow-400">creative co-pilot that transforms imagination
+              into audio reality</span>. Each generation leverages cutting-edge AI models trained on vast musical
+              datasets, ensuring outputs that rival human-composed tracks in complexity and emotional resonance.
             </p>
           </div>
 
           {/* Premium Badge */}
-          <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-yellow-400/30 rounded-full px-6 py-3 mb-8 golden-border-glow golden-sparkle">
-            <Sparkles className="w-5 h-5 text-yellow-400 golden-icon-glow" />
-            <span className="text-yellow-400 font-medium">AI-Powered Music Generation Platform</span>
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-yellow-400/30 rounded-full px-6 py-3 golden-border-glow golden-sparkle">
+              <Sparkles className="w-5 h-5 text-yellow-400 golden-icon-glow" />
+              <span className="text-yellow-400 font-medium">Zero Musical Experience Required • Studio-Quality Output</span>
+            </div>
           </div>
 
           {/* CTA Button */}
-          <button
-            onClick={onStartCreating}
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 font-bold text-lg px-8 py-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-slate-900 transition-all duration-300 shadow-2xl golden-glow-button"
-          >
-            <Music2 className="w-6 h-6" />
-            Start Creating Music Now
-            <ArrowRight className="w-5 h-5" />
-          </button>
+          <div className="text-center">
+            <button
+              onClick={onStartCreating}
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 font-bold text-lg px-8 py-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-slate-900 transition-all duration-300 shadow-2xl golden-glow-button"
+            >
+              <Music2 className="w-6 h-6" />
+              Start Creating Your First AI Song
+              <ArrowRight className="w-5 h-5" />
+            </button>
 
-          <p className="text-blue-300 text-sm mt-4">No signup required • Generate in ~60 seconds • Studio-quality output</p>
+            <p className="text-blue-300 text-sm mt-4">No signup • No downloads • Works instantly in your browser</p>
+          </div>
         </div>
       </section>
 
@@ -143,10 +196,12 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStartCreating }) => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-12 golden-feature-card">
             <h3 className="text-3xl font-bold text-white mb-6 golden-glow-headline">
-              Ready to Bring Your Music Ideas to Life?
+              Join the AI Music Revolution
             </h3>
             <p className="text-xl text-blue-200 mb-8 leading-relaxed">
-              Join creators worldwide who are using AI to produce original music. Start creating your first song today - it only takes a minute.
+              Every day, creators worldwide use Ice King's platform to generate original soundtracks, viral content music, and professional demos.
+              Whether you're a content creator seeking unique audio, a songwriter exploring new ideas, or simply curious about AI's creative potential—your
+              next hit is just 60 seconds away.
             </p>
             <button
               onClick={onStartCreating}
